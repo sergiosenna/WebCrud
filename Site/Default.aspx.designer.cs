@@ -7,11 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Site.Pages
+namespace Site
 {
 
 
-    public partial class Detalhes
+    public partial class Default
     {
     }
 }

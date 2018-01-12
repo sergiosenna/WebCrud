@@ -33,7 +33,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <FilesToIncludeForPublish>OnlyFilesToRunTheApp</FilesToIncludeForPublish>
+    <FilesToIncludeForPublish>AllFilesInTheProject</FilesToIncludeForPublish>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -68,7 +68,14 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <Content Include="Default.aspx" />
+    <Content Include="Pages\Cadastro.aspx" />
+    <Content Include="Pages\Consulta.aspx" />
+    <Content Include="Pages\Detalhes.aspx" />
+    <Content Include="Pages\EstiloPages.css" />
+    <Content Include="Pages\teste.aspx" />
     <Content Include="Scripts\jquery-1.9.1.min.map" />
+    <Content Include="Site.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -81,12 +88,8 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
-    <Content Include="Defaut.aspx" />
     <Content Include="estilo.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
-    <Content Include="Pages\Cadastro.aspx" />
-    <Content Include="Pages\Consulta.aspx" />
-    <Content Include="Pages\Detalhes.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
@@ -100,15 +103,17 @@
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-1.9.1.js" />
     <Content Include="Scripts\jquery-1.9.1.min.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Defaut.aspx.cs">
-      <DependentUpon>Defaut.aspx</DependentUpon>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Defaut.aspx.designer.cs">
-      <DependentUpon>Defaut.aspx</DependentUpon>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\Cadastro.aspx.cs">
       <DependentUpon>Cadastro.aspx</DependentUpon>
@@ -131,7 +136,21 @@
     <Compile Include="Pages\Detalhes.aspx.designer.cs">
       <DependentUpon>Detalhes.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Pages\teste.aspx.cs">
+      <DependentUpon>teste.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\teste.aspx.designer.cs">
+      <DependentUpon>teste.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DAL\DAL.csproj">

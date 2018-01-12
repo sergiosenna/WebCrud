@@ -19,7 +19,7 @@ namespace DAL.Persistencia
         {
             try 
 	        {
-                Con = new SqlConnection("Data Source=SERGIO-PCSQLEXPRESS;Initial Catalog=master;Integrated Security=True");
+                Con = new SqlConnection("Data Source=SERGIO-PC\\SQLEXPRESS;Initial Catalog=master;Integrated Security=True");
                 Con.Open();
 	        }
 	        catch (Exception ex)
