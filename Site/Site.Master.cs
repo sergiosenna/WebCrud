@@ -11,7 +11,7 @@ namespace Site
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+           
         }
         protected void btnAcessar(object sender, EventArgs e)
         {
@@ -27,7 +27,7 @@ namespace Site
                     Response.Redirect("/Default.aspx");
                     break;
                 case "2":
-                    Response.Redirect("/Pages/cadastro.aspx");
+                    Response.Redirect("/Pages/Cadastro.aspx");
                     break;
                 case "3":
                     Response.Redirect("/Pages/Consulta.aspx");

@@ -72,7 +72,6 @@
     <Content Include="Pages\Cadastro.aspx" />
     <Content Include="Pages\Consulta.aspx" />
     <Content Include="Pages\Detalhes.aspx" />
-    <Content Include="Pages\EstiloPages.css" />
     <Content Include="Pages\teste.aspx" />
     <Content Include="Scripts\jquery-1.9.1.min.map" />
     <Content Include="Site.Master" />
@@ -88,7 +87,7 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
-    <Content Include="estilo.css" />
+    <Content Include="Estilo.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

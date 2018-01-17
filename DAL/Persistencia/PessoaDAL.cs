@@ -94,6 +94,7 @@ namespace DAL.Persistencia
                 AbrirConexao();
                 Cmd = new SqlCommand("select * from Pessoa where Codigo=@codigo",Con);
                 Cmd.Parameters.AddWithValue("@codigo", Codigo);
+                Dr = Cmd.ExecuteReader(); //Execução da leitura das informaçoes no BD
 
                 Pessoa p = null; // criando um espaco de memória:
 
@@ -103,7 +104,7 @@ namespace DAL.Persistencia
 
                     p.Codigo    = Convert.ToInt32(Dr["Codigo"]);
                     p.Nome      = Convert.ToString(Dr["Nome"]);
-                    p.Endereco  = Convert.ToString(Dr["Codigo"]);
+                    p.Endereco  = Convert.ToString(Dr["endereco"]);
                     p.Email     = Convert.ToString(Dr["Email"]);
                 }
 
@@ -121,7 +122,7 @@ namespace DAL.Persistencia
         }
 
         //Método para listar todoos os dados cadastrados
-        public List<Pessoa> Lista()
+        public List<Pessoa> Listar()
         {
             try
             {
@@ -137,8 +138,10 @@ namespace DAL.Persistencia
 
                     p.Codigo = Convert.ToInt32(Dr["Codigo"]);
                     p.Nome = Convert.ToString(Dr["Nome"]);
-                    p.Endereco = Convert.ToString(Dr["Codigo"]);
+                    p.Endereco = Convert.ToString(Dr["Endereco"]);
                     p.Email = Convert.ToString(Dr["Email"]);
+
+                    Lista.Add(p);
                 }
 
                 return Lista;

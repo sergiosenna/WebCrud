@@ -22,15 +22,6 @@ namespace Site.Pages {
         protected global::System.Web.UI.WebControls.TextBox txtNome;
         
         /// <summary>
-        /// requiredNome control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator requiredNome;
-        
-        /// <summary>
         /// txtEndereco control.
         /// </summary>
         /// <remarks>
@@ -40,15 +31,6 @@ namespace Site.Pages {
         protected global::System.Web.UI.WebControls.TextBox txtEndereco;
         
         /// <summary>
-        /// requiredEndereco control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator requiredEndereco;
-        
-        /// <summary>
         /// txtEmail control.
         /// </summary>
         /// <remarks>
@@ -56,15 +38,6 @@ namespace Site.Pages {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtEmail;
-        
-        /// <summary>
-        /// requiredEmail control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator requiredEmail;
         
         /// <summary>
         /// lblMensagem control.

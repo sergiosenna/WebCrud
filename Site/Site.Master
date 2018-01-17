@@ -6,17 +6,17 @@
 <head runat="server">
     <title>Home - Meu Site com  Crud</title>
     <link type="text/css" href="Content/bootstrap.css" rel="stylesheet" />
-    <link rel="stylesheet" type="text/css" href="estilo.css" />
+    <link rel="stylesheet" type="text/css" href="Estilo.css" />
 </head>
-    <script src="Scripts/jquery-1.9.1.min.js"></script>
+    <script src='<%= this.ResolveClientUrl("~/js/jquery-1.8.2.js") %>'></script>
     <script src="Scripts/bootstrap.min.js"></script>
 <body>
     <form id="form1" runat="server">
            <div id="content_header">  
                <header id="header">
-                   <nav id="menu" style="background-color: #000000;">
+                   <nav id="menu" style="background-color:#4BBCBC">
                     <span id="menu_text">
-                         S&S - Serviços e Software
+                        S&S - Serviços e Software 
                     </span>
                                   
                    </nav>
@@ -50,7 +50,7 @@
         </div>
         <div id="rodape">
 
-            &copy; 2018 S&S Serviços e Sofware - Todos os Direitos Reservados
+          <h6 style="text-align:center"> &copy; 2018 S&S Serviços e Sofware - Todos os Direitos Reservados </h6> 
         </div>
     </form>
 </body>
